@@ -87,7 +87,12 @@ function checkWin(player) {
 // For tic-tac-toe, tie bascially means the whole board is already occupied
 // This function should return with boolean
 function checkFull() {
-    
+    for (i = 1; i <= 9; i++){
+        if (board[i] === " "){
+            return false
+        }
+    }
+    return true
 }
 
 
